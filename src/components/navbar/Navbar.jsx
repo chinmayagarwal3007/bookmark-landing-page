@@ -5,10 +5,23 @@ import Image from 'next/image'
 
 const Navbar = () => {
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
+    const [imageUrl, setImageUrl] = useState('/icon-hamburger.png');
+    const [backgroundColor, setBackgroundColor] = useState('white');
+
+    const handleClick = () => {
+      // Toggle between the two image URLs
+      setImageUrl((prevImageUrl) =>
+        prevImageUrl === '/icon-hamburger.png'
+          ? '/icon-close.png'
+          : '/icon-hamburger.png'
+      );
+
+      setBackgroundColor((prevColor) => (prevColor === 'white' ? 'rgba(37, 43, 70, 0.9)' : 'white'));
+    };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ backgroundColor: backgroundColor}}>
 
       <div className={styles.image}>
           <Image src="/logo-bookmark.png" alt='logo' width={148} height={25} className={styles.logo}/> 
@@ -21,8 +34,8 @@ const Navbar = () => {
         <button className={styles.button}>LOGIN</button>
       </div>
 
-      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
-        <Image src="/icon-hamburger.png" alt='hamburger' width={18} height={15}   /> 
+      <div className={styles.hamburger} onClick={() => {setOpen(!open);handleClick()}}>
+        <Image src={imageUrl} alt='hamburger' width={18} height={15}   /> 
       </div>
 
     {
@@ -30,18 +43,18 @@ const Navbar = () => {
       
       <div className={styles.mobileLinks}>
 
-        <div>
+        <div className={styles.upperHalf}>
         <p className={styles.mobileLink}>FEATURES</p>
-        <hr />
+        <hr className={styles.hr} />
         <p className={styles.mobileLink}>PRICING</p>
-        <hr />
+        <hr className={styles.hr} />
         <p className={styles.mobileLink}>CONTACT</p>
-        <hr />
+        <hr className={styles.hr} />
         <button className={styles.mobileButton}>LOGIN</button>
         </div>
 
 
-        <div>
+        <div className={styles.social}>
           <Image src="/icon-facebook.png"  alt='facebook-logo' width={24} height={24} />
           <Image src="/icon-twitter.png"  alt='twitter-logo' width={24} height={20} />
         </div>

@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -20,6 +21,11 @@
     font-size: 16px;
     color: hsl(224 , 16% , 14%);
     font-weight: 400;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: hsl(0, 94%, 66%);
 }
 
 .button{
@@ -31,6 +37,13 @@
     width: 115px;
     border: none;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: solid hsl(0, 94%, 66%) 2px;
+    color: hsl(0, 94%, 66%);
 }
 
 .hamburger{
@@ -39,14 +52,23 @@
 
 
 .mobileLinks{
-    height: 400px;
-    width: fit-content;
+    position: absolute;
     z-index: 2;
-    background-color: hsla(229, 31%, 21%, 0.8);
+    background-color: rgba(37, 43, 70, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    top: 38.5px;
+    width: 100vw;
+    height: 350px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
 }
 
 .mobileLink{
@@ -54,22 +76,48 @@
 }
 
 .mobileButton{
-    background-color: hsla(229, 31%, 21%, 0.8);
+    margin: 10px;
+    background-color: transparent;
     color: white;
     border-radius: 5px;
-    border: solid white 5px;
+    border: solid white 3px;
+    width: 60vw;
+    height: 35px;
 }
 
-@media (max-width: 480px) {
-    
+.hr{
+    width:60vw;
+}
+.upperHalf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Styles for standard mobile devices */
-@media (min-width: 481px) and (max-width: 764px) {
-    
+@media (max-width: 764px) {
+    .links{
+        display: none;
+    }   
+    .hamburger{
+        display: flex;
+    }
+    .container{
+        margin: 0px;
+    }
+    .image{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .hamburger{
+        margin-top: 10px;
+        margin-right: 5px;
+    }
 }
 
 /* Styles for small tablets */
 @media (min-width: 764px) and (max-width: 1024px) {
-    
+    .container{
+        margin: 60px;
+    }   
 }
