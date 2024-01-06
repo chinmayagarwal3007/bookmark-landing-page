@@ -1,8 +1,12 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import styles from "./navbar.module.css"
 import Image from 'next/image'
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(true)
+
   return (
     <div className={styles.container}>
 
@@ -17,9 +21,37 @@ const Navbar = () => {
         <button className={styles.button}>LOGIN</button>
       </div>
 
-      <div className={styles.hamburger}>
+      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
         <Image src="/icon-hamburger.png" alt='hamburger' width={18} height={15}   /> 
       </div>
+
+    {
+      open && 
+      
+      <div className={styles.mobileLinks}>
+
+        <div>
+        <p className={styles.mobileLink}>FEATURES</p>
+        <hr />
+        <p className={styles.mobileLink}>PRICING</p>
+        <hr />
+        <p className={styles.mobileLink}>CONTACT</p>
+        <hr />
+        <button className={styles.mobileButton}>LOGIN</button>
+        </div>
+
+
+        <div>
+          <Image src="/icon-facebook.png"  alt='facebook-logo' width={24} height={24} />
+          <Image src="/icon-twitter.png"  alt='twitter-logo' width={24} height={20} />
+        </div>
+
+
+      </div>
+    }
+
+
+
     </div>
   )
 }
