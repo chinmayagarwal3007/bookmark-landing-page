@@ -7,6 +7,7 @@ const Navbar = () => {
 
     const [open, setOpen] = useState(false)
     const [imageUrl, setImageUrl] = useState('/icon-hamburger.png');
+    const [iconUrl, setIconUrl] = useState('/logo-bookmark.png');
     const [backgroundColor, setBackgroundColor] = useState('white');
 
     const handleClick = () => {
@@ -17,6 +18,12 @@ const Navbar = () => {
           : '/icon-hamburger.png'
       );
 
+      setIconUrl((prevImageUrl) =>
+        prevImageUrl === '/logo-bookmark.png'
+          ? '/logo-bookmark_light.png'
+          : '/logo-bookmark.png'
+      );
+
       setBackgroundColor((prevColor) => (prevColor === 'white' ? 'rgba(37, 43, 70, 0.9)' : 'white'));
     };
 
@@ -24,7 +31,7 @@ const Navbar = () => {
     <div className={styles.container} style={{ backgroundColor: backgroundColor}}>
 
       <div className={styles.image}>
-          <Image src="/logo-bookmark.png" alt='logo' width={148} height={25} className={styles.logo}/> 
+          <Image src={iconUrl} alt='logo' width={148} height={25} className={styles.logo}/> 
       </div>
 
       <div className={styles.links}>
