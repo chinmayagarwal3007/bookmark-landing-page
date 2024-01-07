@@ -1,0 +1,82 @@
+.container{
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 160px;
+}
+
+.info{
+    flex: 1;
+    margin-right: 120px;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.chrome{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-weight: 500;
+}
+
+.firefox{
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: hsl(229, 8%, 60%);
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-weight: 500;
+}
+
+.chrome:hover{
+    
+    background-color: transparent;
+    border: solid hsl(231, 69%, 60%) 2px;
+    color: hsl(231, 69%, 60%);
+}
+
+.firefox:hover{
+    background-color: transparent;
+    border: solid hsl(229, 8%, 60%) 2px;
+    color: hsl(229, 8%, 60%);
+    box-shadow: none;
+}
+
+.content{
+    color: hsl(229, 8%, 60%);
+    margin-right: 150px;
+    font-size: 18px;
+}
+.heading{
+    color: hsl(229, 31%, 21%);
+    font-size: 50px;
+}
+
+.block{
+    background-color: hsl(231, 69%, 60%);
+    height: 300px;
+    width: 600px;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+}
+
+.image{
+    flex: 1;
+    position: relative;
+}
+
+.img{
+    position: absolute;
+}
