@@ -19,7 +19,6 @@ const About = () => {
         <Image src='/illustration-hero.png' alt='img' width = {657} height={466} className={styles.img} />
         <div className={styles.block}></div>
       </div>
-
     </div>
   )
 }
