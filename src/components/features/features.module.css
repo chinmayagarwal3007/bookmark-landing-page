@@ -1,0 +1,264 @@
+.mainContainer{
+    margin-top: 70px;
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+    align-items: center;
+    color: hsl(229, 8%, 60%);
+    font-weight: 500;
+}
+.links p{
+    
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    cursor: pointer;
+    
+}
+
+.links p:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+
+.intro h1{
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+.intro p{
+    text-align: center;
+    font-size: 17px;
+    color: hsl(229, 8%, 60%);
+    font-weight: 400;
+    width: 500px;
+    margin-top: 50px;
+}
+.container{
+    width: 100%;
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    flex: 1;
+    margin-left: 120px;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.chrome{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-weight: 500;
+}
+
+
+.chrome:hover{
+    
+    background-color: transparent;
+    border: solid hsl(231, 69%, 60%) 2px;
+    color: hsl(231, 69%, 60%);
+}
+
+
+.content{
+    color: hsl(229, 8%, 60%);
+    font-size: 17px;
+    width: 70%;
+    line-height: 1.5;
+}
+.heading{
+    color: hsl(229, 31%, 21%);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.block{
+    background-color: hsl(231, 69%, 60%);
+    height: 400px;
+    width: 100%;
+    border-bottom-right-radius: 180px;
+    border-top-right-radius: 180px;
+    margin-top: 100px;
+}
+
+.image{
+    flex: 1;
+    position: relative;
+}
+
+.img{
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
+
+
+@media (max-width: 764px) {
+
+    .container{
+        flex-direction: column;
+        margin: 10px;
+        
+        align-items: center;
+        
+        justify-content: center;
+    }
+    .image{
+        order: -1;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        font-size: 15px;
+        align-items: center;
+    }
+    .heading{
+        display: flex;
+        color: hsl(229, 31%, 21%);
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+    .img{
+        width: 365px;
+        height: 258.889px;
+        top: 20px;
+        right: 0px;
+    } 
+    .block{
+        height: 200px;
+        width: 390px;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 100px;
+    }
+
+    .chrome{
+        width: 135px;
+        height: 45px;
+    }
+    
+
+    @media (max-width: 320px){
+        .content{
+            font-size: 14px;
+        }
+        .heading{
+            font-size: 28px;
+        }
+        .block{
+            height: 150px;
+            width: 300px;
+            border-bottom-left-radius: 80px;
+            border-top-left-radius: 80px;
+        }
+
+        .chrome{
+            width: 120px;
+            height: 40px;
+        }
+        
+        .img{
+            width: 298.1818px;
+            height: 211.819px;
+
+            /* height: 656;
+            width: 466; */
+        }
+    }
+}
+
+/* Styles for small tablets */
+@media (min-width: 764px) and (max-width: 968px){
+    .info{
+        margin-right: 0px;
+    }   
+    .img{
+        width: 438px;
+        height: 310.666px;
+        right: 0px;
+    } 
+    .block{
+        height: 280px;
+        width: 450px;
+    }
+    .content{
+        margin-right: 100px;
+    }
+    .container{
+        margin-left: 60px;
+    }
+    .heading{
+        font-size: 39px;
+        padding-right: 25px;
+    }
+    .buttons{
+        margin-top: 40px;
+    }
+    .chrome{
+        width: 135px;
+        height: 45px;
+    }
+     
+}
+
+/* Styles for large tablets */
+@media (min-width: 968px) and (max-width: 1024px) {
+    .info{
+        margin-right: 20px;
+    }   
+    .img{
+        width: 547.5px;
+        height: 388.333px;
+    } 
+    .block{
+        height: 300px;
+        width: 500px;
+    }
+    .content{
+        margin-right: 100px;
+    }
+    .container{
+        margin-left: 60px;
+    }
+}
