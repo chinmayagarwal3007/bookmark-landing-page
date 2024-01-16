@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    line-height: 1.5;
 }
 
 .links{
@@ -119,12 +120,15 @@
 
 @media (max-width: 764px) {
 
+    .mainContainer{
+        margin: 10px;
+        margin-top: 60px;
+    }
+
     .container{
         flex-direction: column;
         margin: 10px;
-        
         align-items: center;
-        
         justify-content: center;
     }
     .image{
@@ -146,13 +150,14 @@
         margin: 0px;
         font-size: 15px;
         align-items: center;
+        width: 90%;
     }
     .heading{
         display: flex;
         color: hsl(229, 31%, 21%);
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 25px;
     }
     .buttons{
         display: flex;
@@ -161,23 +166,67 @@
         margin-top: 40px;
     }
     .img{
-        width: 365px;
-        height: 258.889px;
+        width: 350px;
+        height: 250px;
         top: 20px;
         right: 0px;
     } 
+
     .block{
         height: 200px;
         width: 390px;
-        border-bottom-left-radius: 100px;
-        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
     }
 
     .chrome{
         width: 135px;
         height: 45px;
     }
+
+    .links{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+
+    }
+
+    .links p{
+        padding: 50px;
+        padding-bottom: 30px;
+        padding-top: 0px;
+    }  
     
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro h1{
+        display: flex;
+        color: hsl(229, 31%, 21%);
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    
+    .intro p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        font-size: 15px;
+        align-items: center;
+        width: 90%;
+    }
+
+
 
     @media (max-width: 320px){
         .content{
