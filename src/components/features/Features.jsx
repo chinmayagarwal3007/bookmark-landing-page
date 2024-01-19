@@ -59,7 +59,6 @@ const Features = () => {
           Simple Bookmarking
         </p>
         <p style={{ borderBottom: borderBottom2 }} onClick={handleClick2}>
-          {" "}
           Speedy Searching
         </p>
         <p style={{ borderBottom: borderBottom3 }} onClick={handleClick3}>
