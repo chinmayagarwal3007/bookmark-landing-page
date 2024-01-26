@@ -3,8 +3,9 @@ import Image from 'next/image'
 import styles from "./addBox.module.css"
 
 const AddBox = ({ imageSrc, browserName, version, height, width }) => {
+  const browserClass = browserName.toLowerCase();
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles[browserClass]}`}>
         <Image src={imageSrc} alt='browserImg' height={height} width={width} className={styles.img}/>
         <h1>Add to {browserName}</h1>
         <p>Minimum version {version}</p>

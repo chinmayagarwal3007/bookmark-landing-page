@@ -1,6 +1,32 @@
 .container{
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.container h1{
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+}
+
+.container p{
+    text-align: center;
+    color: hsl(229, 8%, 60%);
+    width: 500px;
+}
+
+.addToContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.firefox{
+    margin-top: 300px;
+}
+.opera{
+    margin-top: 600px;
 }
