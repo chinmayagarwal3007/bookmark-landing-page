@@ -14,6 +14,7 @@
 
 .container p{
     margin-top: 0;
+    margin-bottom: 10px;
 }
 .container h1{
     margin-bottom: 15px;
@@ -22,11 +23,11 @@
 }
 
 .firefox {
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 55px; /* Adjust as needed */
   }
   
   .opera {
-    margin-top: 100px; /* Adjust as needed */
+    margin-top: 110px; /* Adjust as needed */
   }
 
 .line{
@@ -55,4 +56,111 @@
 
 .container p{
     color: hsl(229, 8%, 60%);
+}
+
+
+@media (max-width: 764px) {
+
+    .firefox {
+        margin-top: 10px; /* Adjust as needed */
+      }
+      
+      .opera {
+        margin-top: 10px; /* Adjust as needed */
+      }
+
+
+    @media (max-width: 416px){
+
+        @media (max-width: 300px){
+
+            .container{
+                width: 240px;
+                height: 336px;
+                padding-top: 20px;
+            }
+            
+            .line{
+                margin-top: 25px;
+                width:240px;
+            }
+        
+            .img{
+                height: 85px;
+                width: 83px;
+            }
+            .btn{
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+
+/* Styles for small tablets */
+@media (min-width: 765px) and (max-width: 968px){
+
+    .container{
+        width: 300px;
+        height: 336px;
+        padding-top: 20px;
+    }
+    
+    .line{
+        margin-top: 25px;
+        width:300px;
+    }
+
+    .img{
+        height: 90px;
+        width: 88px;
+    }
+    .btn{
+        margin-top: 25px;
+    }
+
+    
+    .firefox {
+        margin-top: 10px; /* Adjust as needed */
+    }
+      
+    .opera {
+        margin-top: 10px; /* Adjust as needed */
+    }
+
+}
+
+
+
+/* Styles for large tablets */
+@media (min-width: 968px) and (max-width: 1200px) {
+    .container{
+        width: 180px;
+        height: 336px;
+        padding-top: 20px;
+    }
+    
+    .line{
+        margin-top: 25px;
+        width:180px;
+    }
+
+    .img{
+        height: 90px;
+        width: 88px;
+    }
+    .btn{
+        width: 160px;
+        height: 40px;
+        margin-top: 25px;
+        font-size: 11px;
+    }
+    .container h1{
+        font-size: 22px;
+    }
+    .img{
+        height: 90px;
+        width: 88px;
+    }
 }

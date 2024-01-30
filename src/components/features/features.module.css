@@ -314,7 +314,7 @@
 }
 
 /* Styles for large tablets */
-@media (min-width: 968px) and (max-width: 1024px) {
+@media (min-width: 968px) and (max-width: 1200px) {
     .info{
         margin-right: 0px;
         margin-left: 10px;
