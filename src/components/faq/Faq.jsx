@@ -11,9 +11,16 @@ const Faq = () => {
 
   return (
     <div className={styles.container}>
-      <div>
+      
+      <div className={styles.intro}>
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+      </div>
+
+      <div className={styles.box}>
+        <hr className={styles.line} />
         <div className={styles.heading}>
-          <h3 style={{ color: open1 ? 'hsl(0, 94%, 66%)' : 'black' }}>
+          <h3 onClick={() => setOpen1(!open1)}>
             What is Bookmark?
           </h3>
           <Image
@@ -39,9 +46,9 @@ const Faq = () => {
         <hr className={styles.line} />
       </div>
 
-      <div>
+      <div className={styles.box}>
         <div className={styles.heading}>
-          <h3>How can I request a new browser?</h3>
+          <h3 onClick={() => setOpen2(!open2)}>How can I request a new browser?</h3>
           <Image
             className={styles.arrow}
             src="/icon-arrow-down.png"
@@ -67,9 +74,9 @@ const Faq = () => {
         <hr className={styles.line} />
       </div>
 
-      <div>
+      <div className={styles.box}>
         <div className={styles.heading}>
-          <h3>Is there a mobile app?</h3>
+          <h3 onClick={() => setOpen3(!open3)}>Is there a mobile app?</h3>
           <Image
             className={styles.arrow}
             src="/icon-arrow-down.png"
@@ -93,9 +100,9 @@ const Faq = () => {
         <hr className={styles.line} />
       </div>
 
-      <div>
+      <div className={styles.box}>
         <div className={styles.heading}>
-          <h3>What about other Chromium browsers?</h3>
+          <h3 onClick={() => setOpen4(!open4)}>What about other Chromium browsers?</h3>
           <Image
             className={styles.arrow}
             src="/icon-arrow-down.png"
@@ -117,6 +124,8 @@ const Faq = () => {
         )}
         <hr className={styles.line} />
       </div>
+
+      <button className={styles.btn}>More info</button>
     </div>
   );
 };

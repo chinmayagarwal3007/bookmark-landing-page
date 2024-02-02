@@ -1,4 +1,6 @@
 .container{
+    font-family: 'Rubik';
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,8 +9,126 @@
 
 .heading{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    color: hsl(229, 31%, 21%);
+   
+}
+
+.heading h3{
+    font-weight: 500;
+}
+
+.heading h3:hover{
+    color: hsl(0, 94%, 66%);
+    
+}
+
+.box{
+    cursor: pointer;
+}
+
+.box p{
+    width: 500px;
+    color: hsl(229, 8%, 60%);
+}
+
+.intro{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.intro p{
+    text-align: center;
+    color: hsl(229, 8%, 60%);
+}
+
+.intro h2{
+    text-align: center;
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
 }
 
 .line{
-    border: 1px solid black;
+    border: 1px solid hsl(229, 8%, 60%);
 }
+
+.btn{
+    margin-top: 40px;
+    height: 40px;
+    width: 100px;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: hsl(231, 69%, 60%);
+    border: solid hsl(231, 69%, 60%) 2px;
+}
+
+
+@media (max-width: 350px){
+
+    .heading{
+        width: 200px;
+    }
+
+    .box p{
+        width: 200px;
+    }
+    .intro{
+        width: 150px;
+    }
+    .heading h3{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 16px;
+    }
+    
+    .btn{
+        margin-top: 30px;
+        height: 35px;
+        width: 88px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 450px){
+    .heading{
+        width: 300px;
+    }
+
+    .box p{
+        width: 300px;
+    }
+    .intro{
+        width: 250px;
+    }
+}
+
+
+@media (min-width: 450px) and (max-width: 550px){
+
+    .heading{
+        width: 400px;
+    }
+
+    .box p{
+        width: 400px;
+    }
+    .intro{
+        width: 350px;
+    }
+
+}
+
+
