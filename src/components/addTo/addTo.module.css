@@ -59,14 +59,14 @@
         }
 
         .container p{
-            width: 350px;
+            width: 80%;
         }
 
 
         @media (max-width: 300px){
 
             .container p{
-                width: 250px;
+                width: 80%;
             }
 
             .container h1{
