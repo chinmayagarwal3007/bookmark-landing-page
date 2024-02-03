@@ -1,0 +1,55 @@
+.container{
+    background-color: hsl(229, 31%, 21%);
+    padding: 60px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tags{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tags p{
+    color: whitesmoke;
+    font-size: 14px;
+}
+.tags p:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.social{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+}
+
+
+@media (max-width: 764px) {
+    .container{
+        padding: 20px 0px;
+        flex-direction: column;        
+    }
+    .tags{
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+        gap: 15px;
+    }
+    .social{
+        margin-top: 30px;
+    }
+}
+
+/* Styles for small tablets */
+@media (min-width: 765px) and (max-width: 1200px) {
+    .container{
+        padding: 60px;
+        padding-right: 20px;
+    }   
+}
