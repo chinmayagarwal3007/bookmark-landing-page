@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./newsLetter.module.css";
+import styles from "./newsletter.module.css";
 import Image from "next/image";
 
 import { useState } from "react";
